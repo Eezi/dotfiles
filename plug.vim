@@ -9,6 +9,8 @@ if has("nvim")
   Plug 'kristijanhusak/defx-git'
   Plug 'kristijanhusak/defx-icons'
   Plug 'neovim/nvim-lspconfig'
+  Plug 'glepnir/lspsaga.nvim'
+
   Plug 'tami5/lspsaga.nvim', { 'branch': 'nvim51' }
   Plug 'folke/lsp-colors.nvim'
   Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
@@ -68,6 +70,10 @@ Plug 'sbdchd/neoformat'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'ThePrimeagen/harpoon'
 
+" Git
+Plug 'nvim-lua/plenary.nvim'
+Plug 'lewis6991/gitsigns.nvim'
+
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
@@ -75,16 +81,14 @@ Plug 'groenewege/vim-less', { 'for': 'less' }
 call plug#end()
 
 set termguicolors     " enable true colors support
-"let ayucolor="dark"   " for dark version of theme
-"colorscheme ayu
 autocmd BufWritePre *.js Neoformat
 
-" colorscheme codedark
-" let g:airline_theme = 'codedark'
+"colorscheme codedark
+"let g:airline_theme = 'codedark'
 
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = 'hard'
-let g:codedark_term256=0
+"let g:codedark_term256=0
 let g:gruvbox_invert_selection='0'
 
 " Line colors
