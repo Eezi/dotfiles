@@ -21,6 +21,9 @@ if has("nvim")
   Plug 'leafgarland/typescript-vim'
   Plug 'mbbill/undotree'
 
+" Rust plugin
+Plug 'rust-lang/rust.vim'
+
   " Airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -94,7 +97,11 @@ let g:gruvbox_invert_selection='0'
 highlight ColorColumn ctermbg=0 guibg=grey
 hi SignColumn guibg=none
 hi CursorLineNR guibg=None
+
+" Background color
 highlight Normal guibg=none
+
+" Line number color
 highlight LineNr guifg=#5eacd3
 highlight netrwDir guifg=#5eacd3
 

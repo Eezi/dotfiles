@@ -26,11 +26,14 @@ set history=500
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
+filetype plugin indent on
 
 " Set to auto read when a file is changed from the outside
 set autoread
 
-let mapleader = ","
+nnoremap <SPACE> <Nop>
+
+let mapleader = " "
 " Fast saving
 nmap <leader>w :w!<cr>
 nmap <leader>t :tabnew<cr>
