@@ -17,7 +17,7 @@ set hls          "highlight search matches
 set is           "higlight on search
 set t_Co=256
 set t_ut=
-"set cursorline
+set cursorline
 set mouse=a
 
 " Test
