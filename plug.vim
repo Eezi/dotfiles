@@ -71,6 +71,10 @@ Plug 'sbdchd/neoformat'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'ThePrimeagen/harpoon'
 
+" Git
+Plug 'nvim-lua/plenary.nvim'
+Plug 'lewis6991/gitsigns.nvim'
+
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
@@ -82,7 +86,7 @@ autocmd BufWritePre *.js Neoformat
 
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = 'hard'
-let g:codedark_term256=0
+"let g:codedark_term256=0
 let g:gruvbox_invert_selection='0'
 let NERDTreeShowHidden=1
 

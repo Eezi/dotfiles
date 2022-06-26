@@ -130,11 +130,12 @@ noremap yiw yw
 
 ":hi LineNr guibg=none guifg=#ffffff
 
+"Show dotfiles in nerdtree
+let NERDTreeShowHidden=1
 let g:NERDTreeWinPos = "right"
-set background=dark
+"set background=dark
 
 " Imports "{{{
-" ---------------------------------------------------------------------
 runtime ./plug.vim
 if has("unix")
   let s:uname = system("uname -s")
