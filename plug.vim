@@ -21,6 +21,14 @@ if has("nvim")
   Plug 'leafgarland/typescript-vim'
   Plug 'mbbill/undotree'
 
+" Buffer line
+Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
+" Plug 'ryanoasis/vim-devicons' Icons without colours
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+
+" Kanagawa colorscheme
+Plug 'rebelot/kanagawa.nvim'
+
 " Rust plugin
 Plug 'rust-lang/rust.vim'
 
@@ -84,11 +92,13 @@ call plug#end()
 set termguicolors     " enable true colors support
 autocmd BufWritePre *.js Neoformat
 
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = 'hard'
+"colorscheme gruvbox
+colorscheme kanagawa
+
+"let g:gruvbox_contrast_dark = 'hard'
 "let g:codedark_term256=0
-let g:gruvbox_invert_selection='0'
-let NERDTreeShowHidden=1
+"let g:gruvbox_invert_selection='0'
+"let NERDTreeShowHidden=1
 
 highlight ColorColumn ctermbg=0 guibg=grey
 hi SignColumn guibg=none
